@@ -5,11 +5,21 @@
     </head>
     <body>
      <pre>
-n=int(input("Enter Input:"))
+n=int(input("Enter Number:"))
+count=0
+sum=0
+
 while n!=0:
     digit=n%10
     print(digit,end=" ")
-    n=n//10 
+    count=count+1
+    sum=sum+digit
+    n=n//10
+print(end="\n")
+print("Digits Count=",count)
+print("Sum of Digits=",sum)
+    
+
      </pre>
     </body>
 </html>
