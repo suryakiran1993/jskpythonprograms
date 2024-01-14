@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>PYTHON<title/>
+<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+     <pre>
+n=int(input("Enter Input:"))
+temp=n
+sum=0
+while n!=0:
+    digit=n%10
+    sum=sum+pow(digit,3)
+    n=n//10
+if temp==sum:
+    print(temp,"is an Armstrong number")
+else:
+    print(temp,"is not an Armstrong number")  
+     </pre>
+    </body>
+</html>
+
