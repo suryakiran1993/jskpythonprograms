@@ -1,0 +1,28 @@
+<html>
+    <head>
+<title>PYTHON</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+<pre>
+    class Student:
+        id=101
+        name="KLU"
+
+        def display(self):
+            print(f"ID={self.id},Name={self.name}")
+    
+        def __str__(self):
+            return "Name=",self.name
+    
+        def __int__(self):
+            return self.id
+    
+    s = Student() # s is an object of type Student
+    s.display()
+    print(s.__str__())
+    print(s.__int__())    
+</pre>
+    </body>
+</html>
+

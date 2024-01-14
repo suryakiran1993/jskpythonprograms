@@ -1,0 +1,41 @@
+<html>
+    <head>
+<title>PYTHON</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+     <pre>
+        # Example 1: Arithmetic Operation
+        add = lambda x, y: x + y
+        multiply = lambda x, y: x * y
+        
+        result_add = add(3, 4)
+        result_multiply = multiply(3, 4)
+        
+        print(f"Addition Result: {result_add}")
+        print(f"Multiplication Result: {result_multiply}")
+        
+        # Example 2: Filtering with Lambda
+        numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+        
+        print(f"Even Numbers: {even_numbers}")
+        
+        # Example 3: Sorting with Lambda
+        people = [
+            {"name": "Alice", "age": 30},
+            {"name": "Bob", "age": 25},
+            {"name": "Charlie", "age": 35}
+        ]
+        
+        
+        sorted_people = sorted(people, key=lambda person: person["age"])
+        
+        print("Sorted People:")
+        for person in sorted_people:
+            print(f"Name: {person['name']}, Age: {person['age']}")
+           
+     </pre>
+    </body>
+</html>
+

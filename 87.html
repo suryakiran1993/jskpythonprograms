@@ -1,0 +1,19 @@
+<html>
+    <head>
+<title>PYTHON</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+     <pre>
+        import csv
+        
+        with open("demo1.csv","a",newline="") as fileobj:
+            writerobj = csv.writer(fileobj)
+            writerobj.writerow([3,"charan",1111.50])
+            writerobj.writerow([4,"nithya",4000])
+        
+        print("Success")
+     </pre>
+    </body>
+</html>
+

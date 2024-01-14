@@ -1,0 +1,38 @@
+<html>
+    <head>
+<title>PYTHON</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+     <pre>
+    class A:
+        _id=101 #protected property
+        _name="KLU"  #protected property
+        def displayA(self):
+            print(self._id,self._name)
+        def show(self):
+            print("show method in class A")
+    
+    class B(A):
+        gender="MALE" #public property
+        def displayB(self):
+            print("I am in Class B")
+            print(self.gender,self._id,self._name)
+            super().displayA()
+            super().show()
+            print(super()._id)
+            print(super()._name)
+    
+    
+    a = A()
+    print("displayA using A Object")
+    a.displayA()
+    b=B()
+    print("displayB using B Object")
+    b.displayB()
+    print("displayA using B Object")
+    b.displayA()
+     </pre>
+    </body>
+</html>
+

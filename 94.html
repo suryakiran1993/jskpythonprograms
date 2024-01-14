@@ -1,0 +1,31 @@
+<html>
+    <head>
+<title>PYTHON</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+     <pre>
+        l=[]
+        n=int(input("enter size of the list"))
+        print("enter list elements")
+        for i in range(0,n):
+            ele=int(input("enter element"))
+            l.insert(i,ele)
+        
+        print(l)
+        key = int(input("enter key to search "))
+        pos = 0
+        flag = False
+        for i in range (0,n):
+            if l[i]==key:
+                pos = i
+                flag = True
+        
+        if flag:
+            print(f"{key} is found at {pos+1}")
+        else:
+            print(f"{key} not found")          
+     </pre>
+    </body>
+</html>
+

@@ -1,0 +1,33 @@
+<html>
+    <head>
+<title>PYTHON</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+     <pre>
+    def binary_search(arr, target):
+        low, high = 0, len(arr) - 1
+        while low <= high:
+            mid = (low + high) // 2
+            if arr[mid] == target:
+                return mid
+            elif arr[mid] < target:
+                low = mid + 1
+            else:
+                high = mid - 1
+        return -1
+    
+    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    target_number = 5
+    
+    index = binary_search(numbers, target_number)
+    
+    if index != -1:
+        print(f"Target number {target_number} found at index {index}.")
+    else:
+        print(f"Target number {target_number} not found in the list.")
+           
+     </pre>
+    </body>
+</html>
+

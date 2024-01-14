@@ -1,0 +1,38 @@
+<html>
+    <head>
+<title>PYTHON</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+     <pre>
+    def case1():
+        return "This is case 1."
+    
+    def case2():
+        return "This is case 2."
+    
+    def case3():
+        return "This is case 3."
+    
+    def default():
+        return "This is the default case."
+    
+    def switch_case(case_number):
+        d = {
+            1: case1,
+            2: case2,
+            3: case3
+        }
+    
+        output = d.get(case_number, default)
+    
+        return output()
+    
+    case_number = 2
+    result = switch_case(case_number)
+    print(result)
+       
+     </pre>
+    </body>
+</html>
+

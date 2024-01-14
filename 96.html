@@ -1,0 +1,19 @@
+<html>
+    <head>
+<title>PYTHON</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+     <pre>
+        from bs4 import BeautifulSoup   # pip install bs4
+        import requests   # pip install requests
+        
+        url = 'https://www.google.com/'
+        response = requests.get(url)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        print(soup.title.text)
+     </pre>
+    </body>
+</html>
+
