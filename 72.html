@@ -1,0 +1,33 @@
+<html>
+    <head>
+<title>PYTHON</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+     <pre>
+        class A:
+            def display1(self):
+                print("In Class A Display Method")
+        
+        class B(A):
+            def display2(self):
+                print("In Class B Display Method")
+        
+        class C(A):
+            def display3(self):
+                print("In Class C Display Method")
+        
+        class D(B,C):
+            def display4(self):
+                print("In Class D Display Method")
+        
+        print(A.mro())
+        print(B.mro())
+        print(C.mro())
+        print(D.mro())
+        
+        
+     </pre>
+    </body>
+</html>
+
